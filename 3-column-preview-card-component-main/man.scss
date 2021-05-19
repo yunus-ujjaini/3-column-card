@@ -1,0 +1,198 @@
+@import 'reset';
+@import 'style';
+@import 'fonts';
+
+body{
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.card-container{
+   
+    display: flex;
+    width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    .card:first-child{
+        background-color: var(--bright-orange);
+        .card-control{
+            button{
+                color:var(--bright-orange);
+                background-color: white;
+                border-color: white;
+                border:1px solid white;
+                border-radius: 50px;
+                padding: 1.5vh 2vw;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: transparent;
+                border: 1px solid;
+                border-color: white;
+                color:white;
+            }
+        }
+    }
+    .card:nth-child(2) {
+        background-color: var(--dark-cyan);
+        .card-control{
+            button{
+                color:var(--dark-cyan);
+                background-color: white;
+                border-color: white;
+                border:1px solid white;
+                border-radius: 50px;
+                padding: 1.5vh 2vw;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: transparent;
+                border: 1px solid;
+                border-color: white;
+                color:white;
+            }
+        }
+    }
+    .card:nth-child(3){
+        background-color: var(--very-dark-cyan);
+        .card-control{
+            button{
+                color:var(--very-dark-cyan);
+                background-color: white;
+                border-color: white;
+                border:1px solid white;
+                border-radius: 50px;
+                padding: 1.5vh 2vw;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: transparent;
+                border: 1px solid;
+                border-color: white;
+                color:white;
+            }
+        }
+    }
+    .card{
+        min-height: 50vh;
+        padding: 5vh 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-display{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .img{
+                img{
+                    height:2vw;
+                    width: auto;
+                }
+            }
+            .head{
+                padding: 3vh 0vh;
+                font-size: 2vw;
+                font-family:'Big Shoulders Display', cursive;
+                color:var(--very-dark-grey);
+                
+            }
+            .content{
+                
+                color:var(--transparent-white);
+                font-size: 1.2vw;
+            }
+           
+        }
+        .card-control{
+            margin-top: 10vh;
+            font-size: 1vw;
+        }
+    }
+}
+@media only screen and (max-device-width: 700px)  
+{
+    .card-container{
+        margin: 10vh auto;
+        flex-direction: column;
+        width: 90%;
+        .card:first-child{
+            .card-control{
+                button{
+                   
+                    padding: 1vh 5vw;
+                }
+                
+            }
+        }
+        .card:nth-child(2) {
+            background-color: var(--dark-cyan);
+            .card-control{
+                button{
+                    
+                    padding: 1vh 5vw;
+                }
+                
+            }
+        }
+        .card:nth-child(3){
+            .card-control{
+                button{
+                    
+                    padding: 1vh 5vw;
+                }
+
+        }
+        }
+        .card{
+            padding: 3vh 5vw;
+            min-height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .card-display{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .img{
+                    img{
+                        height:5vh;
+                        width: auto;
+                    }
+                }
+                .head{
+                    padding: 3vh 0vh;
+                    font-size: 3vh;
+                    font-family:'Big Shoulders Display', cursive;
+                    color:var(--very-dark-grey);
+                    
+                }
+                .content{
+                    
+                    color:var(--transparent-white);
+                    font-size: 2vh;
+                }
+               
+            }
+            .card-control{
+                margin-top: 5vh;
+                font-size: 1.5vh;
+            }
+        }
+    }
+    .container{
+        height: auto;
+        min-height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+    }
+    
+}
